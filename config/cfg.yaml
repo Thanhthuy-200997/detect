@@ -1,0 +1,25 @@
+data:
+    config: 'D:/hh/detect/config/dataset/ecommerce.yaml'
+    img_encode: 'D:/hh/ultralytics/ultralytics/dataset/ecommerce/images/train10/*'
+    vid_encode: 'D:/hh/detect/video'
+model:
+    nano: 'yolov8n.pt'
+    small: 'yolov8s.pt'
+    medium: 'yolov8m.pt'
+    large: 'yolov8l.pt'
+    xtra_large: 'yolov8x.pt'
+    best_weight: 'D:/hh/ultralytics/ultralytics/runs/detect/yolov8n_custom/weights/best.pt'
+    last_weight: 'D:/hh/ultralytics/ultralytics/runs/detect/yolov8n_custom/weights/last.pt'
+train:
+    imgsz: 640
+    epochs: 1
+    batchsz: 1
+    name: 'yolov8n_custom'
+val:
+    imgsz: 640
+    batchsz: 1
+encoder:
+    time_video_cut: 3 #second
+    rs_json_path: 'C:/Users/DELL/Desktop/Master_K31/Final_project/Code/KOL_crawler/result/json'
+    # json_in_detect: 'D:/hh/detect/json'
+
